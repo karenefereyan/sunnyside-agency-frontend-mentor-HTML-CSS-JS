@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root{
+    --soft-red:hsl(7, 99%, 70%);
+    --yellow:hsl(51, 100%, 49%);
+    --dark-desaturated-cyan:hsl(167, 40%, 24%);
+    --dark-blue:hsl(198, 62%, 26%);
+    --dark-moderate-cyan:hsl(168, 34%, 41%);
+    --very-dark-desaturated-blue:hsl(212, 27%, 19%);
+    --very-dark-grayish-blue:hsl(213, 9%, 39%);
+    --dark-grayish-blue:hsl(232, 10%, 55%);
+    --grayish-blue:hsl(210, 4%, 67%);
+    --white:hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+.main{
+    background: url("/images/mobile/image-header.jpg")
+    no-repeat;
+    background-size: cover;
+    background-position:25% 50%;
+    height: 500px;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.menu-bar{
+    display: none;
+    list-style: none;
+    background: #fff;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    position: absolute;
+    top: 5rem;
+    left: 3.1rem;
+}
+
+.menu-bar.open{
+    display: block;
+}
+
+.menu-bar li:not(first-child){
+    margin: 1.5rem 0;
+}
+
+.menu-bar li a{
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+
+.menu-bar li:last-child{
+    text-transform: uppercase;
+    background-color: var(--yellow);
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1.75rem;
+}
+
+.arrow-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.hero h1{
+    color: #fff;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-family: 'Fraunces', sans-serif;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (min-width:768px){
+   .hamburger{
+       display: none;
+   }
+   /* .menu-bar{
+       display: block;
+       width: 100%;
+       background: none;
+       position:static;
+   } */
+}
